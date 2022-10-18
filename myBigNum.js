@@ -48,9 +48,6 @@ const myBigNum = (A, B) => {
       result.unshift(r);
       log.push(`Kết quả : ${result.join('')}`);
     }
-    if (mind > 0) {
-      temp = Number(A[i]) + Number(B[i]) + mind;
-    }
   } else {
     for (let i = lenB - 1; i >= 0; i--) {
       temp = Number(A[i]) + Number(B[i]) + mind;
@@ -62,9 +59,6 @@ const myBigNum = (A, B) => {
       r = temp % 10;
       result.unshift(r);
       log.push(`Kết quả : ${result.join('')}`);
-    }
-    if (mind > 0) {
-      temp = Number(A[i]) + Number(B[i]) + mind;
     }
   }
   renderLog(log);
